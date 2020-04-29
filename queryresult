@@ -1,0 +1,45 @@
+
+TNAME     
+----------
+IG        
+JDG       
+FPX       
+TES       
+ES        
+EDG       
+RNG       
+WE        
+
+8 rows selected. 
+
+
+DATEOFGAME           TEAM1      SCORE     
+-------------------- ---------- ----------
+03/23/2020           ES         2:0       
+04/09/2020           JDG        2:0       
+
+
+TOP       
+----------
+369
+Aodi
+Gimgoon
+Langx
+Lies
+Morgan
+Theshy
+Xiaobai
+Zoom
+
+9 rows selected. 
+
+
+SUM(GAMEWIN)
+------------
+         104
+
+
+AVG(SERIESWIN)
+--------------
+             8
+

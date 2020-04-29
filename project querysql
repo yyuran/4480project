@@ -1,0 +1,32 @@
+SELECT r.TNAME
+FROM RANKING r
+WHERE r.rankNO<=8;
+
+select g.dateofgame,g.team1,g.score
+from game g 
+where g.team2WL='L' and g.team2='IG'
+UNION
+select g.dateofgame,g.team2,g.score
+from game g
+where g.team1WL='L' and g.team1='IG';
+
+select t.top 
+from team t
+where t.teamname IN(select g.team1
+                    FROM game g
+                    where g.team2WL='L' and g.team2='OMG'
+                    )
+UNION
+select t.top 
+from team t
+where t.teamname IN(select g.team2
+                    FROM game g
+                    where g.team1WL='L' and g.team1='OMG'
+                    );
+
+Select sum(gamewin)
+from ranking 
+where rankNO<=4;
+
+select avg(serieswin)
+from ranking;
